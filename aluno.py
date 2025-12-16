@@ -1,12 +1,12 @@
 from membroEscola import SchoolMember
 
 class Student(SchoolMember):
-  def __init__(self, name, registration,role= "student"):
+  def __init__(self, name, registration,role= "student", presents=0, absences=0, grades=[]):
     super().__init__(name, registration, role)
-    self.presents = 0   # Presença
-    self.absences = 0   # Faltas
-    self.grades = []    # Notas
-
+    self.presents = presents   # Presença
+    self.absences = absences   # Faltas
+    self.grades = grades       # Notas
+    
   def final_average(self):
     """Função para calcular a média final do aluno"""
     media = sum(self.grades)/len(self.grades)

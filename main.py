@@ -48,14 +48,15 @@ def menu_aluno():
 
     if choice == '1':
       print("\n=== Comprovante de Matrícula ===")
-
-        
-      a1.proof_affiliation(name, "student")      
+      a1.proof_affiliation("student")      
     elif choice == '2':
       pass
     elif choice == '3':
-      pass
+      print("\n=== Status Acadêmico ===")
+      a1.academic_status()
     elif choice == '4':
+      print("\n=== Turma ===")
+      a1.view_class()
       return
     else:
       print("Opção inválida. Tente novamente.") 
