@@ -38,7 +38,5 @@ class Student(SchoolMember):
       print("APROVADO")
 
 
-a1 = Student("Ana","1111")
-
 
 # Implementar para ver notas

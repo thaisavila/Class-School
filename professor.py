@@ -36,10 +36,7 @@ class Teacher(SchoolMember):
         print(f"Matrícula: {teacher.registration}")
     print("O Professor está regularmente vinculado a essa instituição de ensino")
 
-a0 = Student("Ana","1111")
-SchoolMember.students.append(a0)
-t2 = Teacher("1","Daniel", "1121")
-t2.proof_affiliation("1121")
+
 
 
 # Criar metodo salario

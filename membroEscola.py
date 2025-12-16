@@ -29,11 +29,3 @@ class SchoolMember:
           print("Estudante")
         elif i.role == "teacher":
           print("Professor")
-
-a1 = SchoolMember("Ana", "1234", "student")
-a2 = SchoolMember("Bruno", "5678", "student")
-a3 = SchoolMember("Carla", "9101", "student")
-t1 = SchoolMember("Daniel", "1121", "teacher")
-
-SchoolMember.students.extend([a1, a2, a3])
-SchoolMember.teachers.append(t1)
