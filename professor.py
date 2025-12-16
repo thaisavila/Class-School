@@ -7,7 +7,7 @@ class Teacher(SchoolMember):
     self.group = group # Turma
     super().__init__(name, registration,role)
     
-  def release_nota(self, registration,grade):
+  def release_grade(self, registration,grade):
      """Função que permite o professor lançar as notas"""
      for i in SchoolMember.students:
       if i.registration == registration:
